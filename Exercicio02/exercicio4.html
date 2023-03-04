@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-4</title>
+</head>
+<body>
+    
+    <!-- 4) Faça uma função que leia cinco valores inteiros, com uma
+     estrutura de repetição, determine e mostre o maior e o
+     menor deles. -->
+
+     <!-- As variáveis "Min_Safe_Integer" e "Max_Safe_Integer" estão servindo
+     para identificar o menor e o maior número, tudo foi feito sem o uso de 
+     variáveis globais, e o "console.log" ira mostrar o valor dos números
+     no console. -->
+
+
+    <script>
+         
+        function fun() {
+
+            let maiorNumero = Number.MIN_SAFE_INTEGER;
+            let menorNumero = Number.MAX_SAFE_INTEGER;
+
+
+            for (let i = 1; i <= 5; i++) {
+
+            const valor = parseInt(prompt(`Digite os números ${i}:`));
+            if (valor > maiorNumero){
+              maiorNumero = valor;
+            }
+
+            if (valor < menorNumero){
+              menorNumero = valor;
+            }
+
+        }
+
+            console.log(`O maior valor é ${maiorNumero} e o menor valor é ${menorNumero}`)
+ 
+    }
+
+        fun()
+
+
+    </script>
+
+</body>
+</html>

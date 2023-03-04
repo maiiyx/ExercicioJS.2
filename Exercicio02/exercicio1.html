@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-1</title>
+</head>
+<body>
+
+    <!-- 1) Escreva um script que recebe as 3 notas de um aluno por parâmetro e uma letra.
+     Se a letra for A o procedimento calcula a média aritmética das notas do aluno, se for
+     P, a sua média ponderada (pesos: 5, 3 e 2). A média calculada também deve retornar
+     por parâmetro. -->
+
+     <!-- O "var" esta declarando as variáveis da nota1, nota2, nota3 e a letra que irá
+     definir se a média é aritmética ou ponderada, o "function" está chamando essas
+     variáveis, o "if" e "else if" está para definir se a média é aritmética ou ponderada, e o
+     "console.log" ira mostrar o valor das medias para o usuário. -->
+
+    <script>
+
+        var nota1, nota2, nota3, letra
+
+        var nota1 = parseInt(prompt("Digite a nota do aluno:"))
+        var nota2 = parseInt(prompt("Digite a nota do aluno:"))
+        var nota3 = parseInt(prompt("Digite a nota do aluno:"))
+        var letra = prompt("Digite a letra A ou P:")
+
+        function fun (nota1, nota2, nota3, letra){
+
+            if( letra == "A" ){
+                console.log("Sua média aritmética é "+(nota1+nota2+nota3)/3)
+            }else if( letra == "P" ){
+                console.log("Sua média ponderada é "+((nota1*5)+(nota2*3)+(nota3*2))/10)
+            }
+
+            nota1 = x 
+            
+
+    }
+
+        fun (nota1, nota2, nota3, letra)
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade-2</title>
+</head>
+<body>
+    
+    <!-- 2) Faça uma função que receba um único valor representando segundos. Essa função
+     deverá convertê-lo para hora, minutos e segundos. Todas as variáveis devem ser
+     passadas como parâmetro, não havendo variáveis globais. -->
+
+     <!-- O "Function" esta chamamndo a função, as variáveis estão todas dentro da função
+     sem o uso de variáveis global, o "let hora" esta responsavel em converter os segundos 
+     para hora, o "let minuto" esta responsavel em converter os segundos para minutos, 
+     o "var segundo" esta sendo usado para poder repetir a variavel "segundo", e o 
+     "console.log" irá mostrar o valor em horas, minutos e segundos no console. -->
+
+     <script>
+
+        function fun(){
+            
+            segundo = parseInt(prompt("Digite o tempo em segundo:"))
+    
+            let hora = Math.floor(segundo / 3600)
+            let minuto = Math.floor(segundo / 60)
+            var segundo = Math.floor(segundo % 60)
+            
+            console.log(`O valor convertido é ${hora}:${minuto}:${segundo}`)
+        }
+
+        fun()
+
+     </script>
+
+</body>
+</html>
